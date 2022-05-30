@@ -1,12 +1,13 @@
 import React from "react"
-import { parse } from "@/parser"
-import MinimumGraph from "../graph/minimum-graph"
-// const r = "/[\\z-\\a]/u"
-const r = "/abc/"
+import { parse, AST } from "@/parser"
+import Container from "@/modules/graph/container"
+const r = "^(abc|\\d123[1-34-6]\\2)"
+console.log(parse("[1231]"))
+const ast = parse(r) as AST.Regex
 const Playground: React.FC<{}> = () => {
   return (
     <>
-      <MinimumGraph regex={r} />
+      <Container ast={ast} />
     </>
   )
 }
