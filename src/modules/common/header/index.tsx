@@ -20,12 +20,12 @@ const Header: React.FC<Props> = ({ onThemeChange, theme }) => {
         <Link to="/">
           <div className="logo">
             <LogoSvg />
-            <span>Regex-Vis</span>
+            <span>Regex Visualisation</span>
           </div>
         </Link>
         <div className="nav">
           <NavLink to="/" exact activeStyle={activeStyle}>
-            Home
+            Input
           </NavLink>
           <NavLink to="/samples" activeStyle={activeStyle}>
             Samples
@@ -34,11 +34,11 @@ const Header: React.FC<Props> = ({ onThemeChange, theme }) => {
             About
           </NavLink> */}
           <a
-            href="https://github.com/Bowen7/regex-vis"
+            href="https://bojin.co"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Github
+            Home
           </a>
           {/* <Select value="en" width="100px" disableMatchWidth scale={0.5}>
             <Select.Option value="en">English</Select.Option>
